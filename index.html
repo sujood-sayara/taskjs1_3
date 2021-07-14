@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>countries' data</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="countries.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js></script>
+    
+</head>
+
+<body>
+    <header>
+        <h1> countries' data</h1>
+    </header>
+    <div class="main-container">
+        <div class="table-container">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>alpha3Code</th>
+                        <th>population</th>
+                        <th>capital</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="pagination">
+
+        <ol id="numbers"></ol>
+    </div>
+
+<div id='weather_div' style="display: none;">
+
+    <div class="weather-container">
+        <div id='city_name' class="city_name"></div>
+        <div class="weather-box">
+          <div ID="weatherdescboxes">
+            <div ID="weatherdesc">
+                <p id='temp'></p>
+            </div>
+            <div ID="weatherdesc2">
+            
+              <p class="weathmore" id="for_main"></p>
+              <div class="icon" id='for_icon'></div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>
