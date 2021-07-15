@@ -81,84 +81,84 @@ body {
 #table tr {
   text-align: center;
 }
-  .weather-container {
-    display:flex;
-    justify-content: space-around;
-    flex-direction: row;
-    
-  }
-  
-  .weather-box {
-    top:40%;
-    width:400px;
-    position:absolute;
-    background-color:#0984e3;
-    background: rgb(18,159,241);
-    background: linear-gradient(180deg, rgba(18,159,241,1) 24%, rgba(52,244,249,1) 100%);
-    border-radius:20px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 60px 0 rgba(0, 0, 0, 0.19);
-    display:flex;
-    flex-direction:column;
-    
-  }
-  
-  #weatherdescboxes {
-    display:flex;
-    background-color:#FFFFFF;
-    align-items: flex-end;
-    text-align: left;
-    
-  }
-  
-  #weatherdesc {
-    height:100px;
-    background-color:transparent;
-    font-size:4.5em;
-    font-weight:normal;
-    color:#0A84E3;
-    width:50%;  
-   
-    padding-left:30px;
-  }
-  
-  #weatherdesc p {
-    margin-left:30px;
-  }
-  
-  #weatherdesc2 {
-    height:100px;
-    font-size:0.9em;
-    color:#0b71bf;
-    background-color:transparent;
-    border:0px solid red;
-    width:50%;
-    margin-top:5%;
-    border-left:1px solid;
-  }
-  
-  p {
-    margin-top:0px;
-    margin-left:20px;
-    font-size: 30px;
-  }
-  
+.weather-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
 
-  .weathmore {
-    padding-top:0px;
-    margin-bottom:0px;
-    text-align: center;
-  }
-  
-  .city_name{
-    text-align: center;
-    font-size: 40px;
-  }
- .icon{
-  padding-top:10px;
+.weather-box {
+  top: 40%;
+  width: 400px;
+  position: absolute;
+  background-color: #0984e3;
+  background: rgb(18, 159, 241);
+  background: linear-gradient(
+    180deg,
+    rgba(18, 159, 241, 1) 24%,
+    rgba(52, 244, 249, 1) 100%
+  );
+  border-radius: 20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 60px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+}
+
+#weatherdescboxes {
+  display: flex;
+  background-color: #ffffff;
+  align-items: flex-end;
+  text-align: left;
+}
+
+#weatherdesc {
+  height: 100px;
+  background-color: transparent;
+  font-size: 4.5em;
+  font-weight: normal;
+  color: #0a84e3;
+  width: 50%;
+
+  padding-left: 30px;
+}
+
+#weatherdesc p {
+  margin-left: 30px;
+}
+
+#weatherdesc2 {
+  height: 100px;
+  font-size: 0.9em;
+  color: #0b71bf;
+  background-color: transparent;
+  border: 0px solid red;
+  width: 50%;
+  margin-top: 5%;
+  border-left: 1px solid;
+}
+
+p {
+  margin-top: 0px;
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+.weathmore {
+  padding-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.city_name {
+  text-align: center;
+  font-size: 40px;
+}
+.icon {
+  padding-top: 10px;
   text-align: center;
   font-size: 50px;
- }
- /* modal part */
+}
+/* modal part */
 #modal-background {
   display: none;
   background-color: rgba(0, 0, 0, 0.2);
@@ -182,7 +182,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   font-size: 1.5rem;
   animation-name: animatemodal;
   animation-duration: 0.4s;
@@ -194,7 +194,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.65);
+  background-color: rgba(0, 0, 0, 0.65);
   display: none;
 }
 .body-blackout.is-blacked-out {
@@ -210,7 +210,7 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   padding: 45px;
   opacity: 0;
   pointer-events: none;
@@ -229,6 +229,6 @@ body {
   cursor: pointer;
   color: blue;
 }
-
-
-  
+.filter {
+  margin-left: 40% ;
+}
