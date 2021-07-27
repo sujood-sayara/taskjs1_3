@@ -30,6 +30,8 @@ async function getData(requestUrl) {
       }
       displayRows(1);
       filter(data);
+      weather_model();
+
     });
 }
 
@@ -64,7 +66,6 @@ function createRow(cityObj) {
   row_2.appendChild(forecast_button);
   tbody.appendChild(row_2);
   data1.push(row_2);
-  weather_model();
 }
 
 function makepagination(data) {
@@ -93,6 +94,8 @@ function displayRows(index) {
   let end = start + rowsPerPage;
   $(data1).hide();
   $(data1).slice(start, end).show();
+  weather_model();
+
 }
 
 function getforecastData(latlon) {
@@ -164,14 +167,16 @@ function filter(data) {
 }
 
 function search(val, data) {
+  val =val.toLowerCase();
   data = data.filter((country) => {
     return (
-      country.name.includes(val) ||
-      country.alpha3Code.includes(val) ||
-      country.capital.includes(val) ||
+      country.name.toLowerCase().includes(val) ||
+      country.alpha3Code.toLowerCase().includes(val) ||
+      country.capital.toLowerCase().includes(val) ||
       country.population.toString().includes(val)
     );
   });
+  console.log(data)
   document.getElementById("numbers").innerHTML = "";
   document.getElementById("tbody").innerHTML = "";
   data1 = [];
